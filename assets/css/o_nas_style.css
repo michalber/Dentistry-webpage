@@ -1,0 +1,52 @@
+.hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4),rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1524821695732-717b25a38974?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=08f92fcbaca12ac3d128dbc91f447164&auto=format&fit=crop&w=1800&q=80");
+    background-size:cover;
+    background-position: center; 
+    background-attachment: fixed;    
+    background-repeat: no-repeat;
+    height: 33vh;  
+    position: relative;
+    top: 70px;
+}
+
+.experience {
+    margin-top: 80px;
+}
+
+.experience h1 {
+    padding-bottom: 12px;
+}
+
+.experience .teeth-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;    
+}
+
+.dyplomy ul {
+    list-style: none;
+}
+
+.dyplomy .inner {
+    margin: auto;
+    text-align: center;    
+    -webkit-box-shadow: 0px 0px 4px #c1c1c1;
+    -moz-box-shadow: 0px 0px 4px #c1c1c1;
+    box-shadow: 0px 0px 6px #c1c1c1;
+    height: 300px;
+    width: 300px; 
+    margin-bottom: 20px;
+}
+
+.dyplomy .inner span {
+    height: 60px;
+    width: 60px;
+    display: inline-block;    
+    background-size: 68px;
+    margin: 30px;
+    margin-bottom: 0;
+    background: url(../img/diploma.png) no-repeat top center;
+    display: inline-block;    
+    background-size: 58px;
+}
+
