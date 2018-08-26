@@ -8,3 +8,26 @@
     position: relative;
     top: 70px;
 }
+
+
+.oferta {
+    margin-top: 60px;
+}
+
+.oferta .inner .fourth {
+    background: url(../img/png/tooth-filling.png) no-repeat top center;
+    display: inline-block;    
+    background-size: 68px;
+}
+
+.oferta .inner .fifth {
+    background: url(../img/png/molar-inside-a-shield.png) no-repeat top center;
+    display: inline-block;    
+    background-size: 68px;
+}
+
+.oferta .inner .sixth {
+    background: url(../img/png/dental-prosthesis.png) no-repeat top center;
+    display: inline-block;    
+    background-size: 68px;
+}

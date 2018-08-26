@@ -1,3 +1,10 @@
+/*
+- first color: #7D6A60
+- second color: #C9B8AF
+- third color: #C99E87
+- fourth color: #72C9C5
+- fifth color: #607D7C
+*/
 * {
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
@@ -24,6 +31,7 @@ body {
 /*------------------------------------------------------------*/
 
 h1 {
+    font-size: 36px;
     margin-top: 0;
     margin-bottom: 50px;
     color: white;
@@ -50,9 +58,10 @@ h3 {
 /*---------------------PARAGRAPHS--------------------*/
 /*------------------------------------------------------------*/
 p { 
+    font-size: 16px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
-    line-height: 145%;
+    line-height: 170%;
 }
 
 /*----------------------------------------------------------------------------------------------*/
@@ -66,8 +75,7 @@ p {
 nav {    
     padding: 8px;
     background: rgba(255, 255, 255, 0.75);
-    transition: background 200ms linear;
-    /*background: rgba(137, 122, 112, 0.79);*/
+    transition: background 200ms linear;    
     height: 70px;
     width: 100%;
     position: fixed;
@@ -302,7 +310,7 @@ header {
     left: 40%;
     transform: translate(-50%,-50%);
     color: white;
-    font-size: 120%;
+    font-size: 100%;
 }
 
 .hero-text-box a {
@@ -352,8 +360,8 @@ input[type=submit]:active   {
 
 .btn-full:hover,
 .btn-full:active{
-    background-color: #b99b89;
-    border:1px solid  #b99b89;
+    background-color: #C9B8AF;
+    border:1px solid  #C9B8AF;
 }
 
 .btn-ghost:hover,
@@ -365,14 +373,14 @@ input[type=submit]:active   {
 /*---------------------------------ABOUT US----------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
 .container {
-    padding: 70px 0;
+    padding: 60px 0;
 }
 
-.container .header h1 {
-    font-size: 35px;
+.o-nas .header h1 {
+    /*font-size: 35px;*/
 }
 
-.container .text {
+.o-nas .text {
     top: 25px;
     left: 50px;
 }
@@ -383,7 +391,7 @@ input[type=submit]:active   {
     margin-bottom: 60px;    
 }
 .heading h1 {    
-    font-size: 36px;
+    /*font-size: 36px;*/
     line-height: 35px;
     text-transform: none;
     padding-bottom: 25px;
@@ -400,7 +408,7 @@ input[type=submit]:active   {
 }
 
 .heading p {
-    font-size: 18px;
+    /*font-size: 18px;*/
     width: 70%;
 }
 
@@ -458,7 +466,7 @@ input[type=submit]:active   {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px;
     color: #000;   
 }
@@ -556,7 +564,7 @@ slide:nth-child(4) {
 slide .text {    
     width: 33%;
     height: 100%;
-    background-color: rgba(125, 106, 96, 0.75);
+    background-color: rgba(125, 106, 96, 0.75); 
     opacity: 0;
     transition: opacity 0.3s ease;        
 }
