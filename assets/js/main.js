@@ -38,8 +38,11 @@ $("html").easeScroll({
   accelerationMax: 1,
   keyboardSupport: true,
   arrowScroll: 50,
-  touchpadSupport: false,
-  fixedBackground: true
+  touchpadSupport: true,
+  fixedBackground: true,
+  bleed: 10,
+  androidFix: true,
+  iosFix: true
 });
 //--------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------
