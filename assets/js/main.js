@@ -39,8 +39,7 @@ $("html").easeScroll({
   keyboardSupport: true,
   arrowScroll: 50,
   touchpadSupport: true,
-  fixedBackground: true,
-  bleed: 10,
+  fixedBackground: true,  
   androidFix: true,
   iosFix: true
 });
