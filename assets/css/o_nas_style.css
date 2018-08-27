@@ -6,7 +6,8 @@
 - fifth color: 607D7C
 */
 .hero {
-    background: linear-gradient(rgba(255, 255, 255, 0.4),rgba(0, 0, 0, 0.6));
+/*    background: linear-gradient(rgba(255, 255, 255, 0.4),rgba(0, 0, 0, 0.6));*/
+    background: transparent;
     background-size:cover;
     background-position: center; 
     background-attachment: fixed;    
@@ -15,7 +16,22 @@
     position: relative;
     top: 70px;
 }
-
+.hero h1 {    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-100%);
+    font-size: 42px;       
+}
+.hero h1::after {
+    display: block;
+    height: 2px;
+    background-color: #607D7C;
+    content: " ";
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
 .experience {
     margin-top: 80px;
 }
@@ -37,7 +53,7 @@
     content: " ";
     width: 200px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .intro p {    

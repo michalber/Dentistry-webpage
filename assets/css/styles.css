@@ -200,6 +200,7 @@ nav ul li a:hover {
     }        
     
     .nav-wrapper ul li:nth-child(1) a {
+        margin-top: 20px;
         transition-delay: 0.2s;
     }
     
@@ -440,7 +441,7 @@ input[type=submit]:active   {
     content: " ";
     width: 200px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .heading p {
@@ -540,7 +541,7 @@ input[type=submit]:active   {
     content: "";
     width: 200px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 slider {    

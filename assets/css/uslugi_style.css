@@ -1,6 +1,7 @@
 .hero {    
     background-position:0px -420px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4),rgba(75, 75, 75, 0.6));   
+/*    background-image: linear-gradient(rgba(255, 255, 255, 0.4),rgba(75, 75, 75, 0.6));   */
+    background: transparent;
     background-size:cover;     
     background-attachment: fixed;    
     background-repeat: no-repeat;
@@ -8,7 +9,22 @@
     position: relative;
     top: 70px;
 }
-
+.hero h1 {    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-100%);
+    font-size: 42px;      
+}
+.hero h1::after {
+    display: block;
+    height: 2px;
+    background-color: #607D7C;
+    content: " ";
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
 
 .oferta {
     margin-top: 60px;
