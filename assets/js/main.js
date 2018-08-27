@@ -38,7 +38,7 @@ $("html").easeScroll({
   accelerationMax: 1,
   keyboardSupport: true,
   arrowScroll: 50,
-  touchpadSupport: true,
+  touchpadSupport: false,
   fixedBackground: true
 });
 //--------------------------------------------------------------------------------------------------------
