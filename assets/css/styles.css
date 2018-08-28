@@ -435,8 +435,8 @@ input[type=submit]:active   {
     }
 }
 
-.o-nas .header h1 {
-    /*font-size: 35px;*/
+.o-nas .header {
+    margin-top: 40px;
 }
 
 .o-nas .text {
