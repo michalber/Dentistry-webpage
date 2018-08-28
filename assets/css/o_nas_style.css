@@ -117,6 +117,20 @@ linear-gradient(to right, rgba(232, 241, 255, 0.7), rgba(219, 230, 245, 0.7))
         width: 100%;
     }
 }
+@media screen and (max-width:768px) {  
+    .experience .teeth-photo {
+        width: 0;
+        visibility: hidden;
+    }
+    .experience .col-xs-4 {
+        width: 0;
+    }
+    .experience .col-xs-8 {
+        width: 100%;
+        padding: 0 50px;
+    }
+}
+
 .dyplomy ul {
     list-style: none;
 }
