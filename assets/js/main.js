@@ -8,8 +8,7 @@ $(function(){
 $(document).ready(function(){
     $(window).scroll(function() { 
         if ($(document).scrollTop() > 100) { 
-//            $("nav").css("background", "rgb(125, 106, 96,0.8)");           
-            $("nav").css("height","50px");
+//            $("nav").css("background", "rgb(125, 106, 96,0.8)");                       
             $("nav").css("background", "linear-gradient(175.9deg,rgba(125, 106, 96, 0.9) 15%, rgba(95, 71, 61, 0.9) 87.6%)");
             $("nav ul li a").css("color","#fff");
             $(".nav-btn i").css("background","#fff");
@@ -18,8 +17,7 @@ $(document).ready(function(){
             document.getElementById('logo_black').src='assets/img/logoAP_white.png';
         } 
         else {
-          //  $("nav").css("background", "rgba(255, 255, 255,0.8)");             
-            $("nav").css("height","70px");
+          //  $("nav").css("background", "rgba(255, 255, 255,0.8)");                         
             $("nav").css("background", "linear-gradient(to right, hsla(217, 100%, 97%, 0.7), hsla(215, 57%, 97%, 0.7))");
             $("nav ul li a").css("color","#000");
             $(".nav-btn i").css("background","#000");
