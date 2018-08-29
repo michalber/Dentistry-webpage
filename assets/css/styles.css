@@ -13,7 +13,8 @@
 #15aaa0
 linear-gradient( 175.9deg, #50606F 15%, #497C80 87.6%)
 linear-gradient( 175.9deg,rgba(125, 106, 96, 1) 15%, rgba(85,76,74,1) 87.6%)
-linear-gradient(to right, rgba(232, 241, 255, 0.7), rgba(219, 230, 245, 0.7))
+linear-gradient( 175.9deg, #8092a3 15%, #7aafb3 87.6%);
+
 */
 * {
     margin: 0;
@@ -201,7 +202,7 @@ nav ul li a:hover {
         width: 0;
         height: 100%;
         z-index: -1;
-        background: #fff;
+        background:  linear-gradient(to right, hsla(217, 100%, 97%, 1), hsla(215, 57%, 97%, 1));
         opacity: 0;
         transition: all 0.2s ease;
     }
@@ -327,12 +328,6 @@ nav ul li a:hover {
 https://images.unsplash.com/photo-1460620105278-b7f0516e6d65?ixlib=rb-0.3.5&s=d34783f025ae6d3e8fd5a4d8f932d748&auto=format&fit=crop&w=1350&q=80
 ---------------------------------------------------------------------------------------*/
 header {    
-    background: transparent linear-gradient(rgba(0, 0, 0, 0.5) 20%,rgba(126, 126, 126, 0.5) 100%);
-    background: transparent -moz-linear-gradient(rgba(0, 0, 0, 0.5) 20%,rgba(126, 126, 126, 0.5) 100%);
-    background: transparent -ms-linear-gradient(rgba(0, 0, 0, 0.5) 20%,rgba(126, 126, 126, 0.5) 100%);
-    background: transparent -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 20%,rgba(126, 126, 126, 0.5) 100%);
-    background: transparent -o-linear-gradient(rgba(0, 0, 0, 0.5) 20%,rgba(126, 126, 126, 0.5) 100%);
-    
     background-size:cover;
     background-position: center; 
     background-attachment: fixed;    
@@ -616,7 +611,8 @@ input[type=submit]:active   {
     margin-top: 10px;
 }
 
-slider {    
+.slider slider,
+.text-slider slider {    
     position: relative;
     display: block;
     width: 100%;
@@ -627,9 +623,12 @@ slider {
     margin: 0;
     box-shadow: 0px 22px 68px -9px hsla(209, 16%, 67%, 0.6);
 }
-
+.text-slider slider {
+    background-color: #fff;
+}
 @media screen and (max-width:700px) {
-    slider {    
+    .slider slider,
+    .text-slider slider {    
         position: relative;
         display: block;
         width: 100%;  
@@ -639,9 +638,15 @@ slider {
         padding: 0;
         margin: 0;
     }
+    .text-slider slider {    
+        width: 100%;  
+        height: 200px;
+        background-color: #fff;
+    }
 }
 
-slider > * {    
+.slider slider > * ,
+.text-slider slider > * {    
     position: absolute;
     display: block;
     width: 100%;
@@ -650,8 +655,10 @@ slider > * {
     animation: slide 16s infinite;
     overflow: hidden;    
 }
-
-slide:nth-child(1) {
+.text-slider slider > * {    
+    background: #fff;
+}
+.slider slide:nth-child(1) {
     left: 0%;    
     animation-delay: 0s;
     background-image: url(../img/gabinet1.jpg);    
@@ -660,7 +667,7 @@ slide:nth-child(1) {
     background-position: center;
 }
 
-slide:nth-child(2) {    
+.slider slide:nth-child(2) {    
     animation-delay: 4s;
     background-image: url(../img/gabinet2.jpg);
     background-repeat: no-repeat;
@@ -668,7 +675,7 @@ slide:nth-child(2) {
     background-position: center;
 }
 
-slide:nth-child(3) {    
+.slider slide:nth-child(3) {    
     animation-delay: 8s;
     background-image: url(../img/gabinet3.jpg);
     background-repeat: no-repeat;
@@ -676,14 +683,26 @@ slide:nth-child(3) {
     background-position: center;
 }
 
-slide:nth-child(4) {    
+.slider slide:nth-child(4) {    
     animation-delay: 12s;
     background-image: url(../img/gabinet2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
 }
-
+.text-slider slide:nth-child(1) {
+    left: 0%;  
+    animation-delay: 0s;
+}
+.text-slider slide:nth-child(2) {
+    animation-delay: 4s;
+}
+.text-slider slide:nth-child(3) {
+    animation-delay: 8s;
+}
+.text-slider slide:nth-child(4) {
+    animation-delay: 12s;
+}
 slide .text {    
     width: 33%;
     height: 100%;
@@ -697,12 +716,19 @@ slide .text {
         width: 100%;
         height: 100%;
         background-color: linear-gradient( 175.9deg, hsla(209, 16%, 87%, 0.75) 15%, hsla(184, 27%, 89%, 0.75) 87.6%); 
-        opacity: 1;   
+        opacity: 0;   
     }
-    slide:hover .text,
-    slide:focus .text,
-    slide:active .text {
+    .slider slide:hover .text,
+    .slider slide:focus .text,
+    .slider slide:active .text {
         opacity: 0;
+    }
+    .text-slider slide .text {
+        opacity: 1;
+    }
+    .text-slider slide .text h2 {
+        margin: 0;
+        padding: 30px;
     }
 }
 slide .text p,
@@ -738,7 +764,9 @@ slide .text p {
     100% {left: 100%; width: 0;}
 }
 
-slide:hover .text {
+slide:hover .text,
+slide:focus .text,
+slide:active .text {
     opacity: 1;
 }
 /*----------------------------------------------------------------------------------------------*/
@@ -812,7 +840,15 @@ address {
 .opening p {
     color: #ccc;
     float: left;
-    font-size: 14px;
+    font-size: 18px;
+}
+@media screen and (max-width:900px) {
+    .opening p {
+        color: #ccc;
+        float: left;
+        font-size: 14px;
+        margin-right: 30px;
+    }
 }
 /*----------------------------------------------------------------------------------------------*/
 .footer-nav li {    

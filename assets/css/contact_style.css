@@ -20,12 +20,13 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-100%);
+    transform: translate(-50%,-75%);
     font-size: 42px; 
     padding: 20px;
     border: 3px solid #497C80;
     color: #393939;
 }
+
 @media screen and (max-width:1010px) {
     .hero h1 { 
         font-size: 36px;
@@ -79,6 +80,11 @@
 .opis {
     width: 100%;
     margin-top: 16px;
+}
+@media screen and (max-width:765px) {
+    .opis p {
+        font-size: 12    5%;
+    }
 }
 @media screen and (max-width:1200px) {
     .doctor img {
