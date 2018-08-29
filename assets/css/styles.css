@@ -721,13 +721,13 @@ slide .text {
     .slider slide:hover .text,
     .slider slide:focus .text,
     .slider slide:active .text {
-        opacity: 0;
+        opacity: 1;
     }
     .text-slider slide .text {
         opacity: 1;
     }
     .text-slider slide .text h2 {
-        margin: 0;
+        margin: 1;
         padding: 30px;
     }
 }
