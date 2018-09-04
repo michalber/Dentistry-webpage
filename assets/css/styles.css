@@ -431,11 +431,11 @@ input[type=submit]:active   {
 }
 
 .o-nas .header {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .o-nas .text {
-    margin-top: 25px;
+    margin-top: 50px;
 }
 /*----------------------------------------------------------------------------------------------*/
 /*---------------------------------OFERTA----------------------------------------------------*/
@@ -476,8 +476,8 @@ input[type=submit]:active   {
 
 /*    border: 4px solid #7D6A60;*/
     border-radius: 14px;
-    height: 300px;
-    width: 300px; 
+    height: 325px;
+    width: 310px; 
     margin-bottom: 20px;
     
 /*
@@ -509,7 +509,7 @@ input[type=submit]:active   {
     background-size: 68px;
 }
 .oferta .inner .third {
-    background: url(../img/png/dental-device.png) no-repeat top center;
+    background: url(../img/png/brushing-teeth.png) no-repeat top center;
     display: inline-block;    
     background-size: 68px;
 }
@@ -521,7 +521,7 @@ input[type=submit]:active   {
 .oferta .inner p {
     font-size: 105%;
     position: relative;
-    width: 80%;
+    width: 90%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -583,7 +583,7 @@ input[type=submit]:active   {
   width: 100%;
   height: 100%; 
   border-radius: 12px;
-  background: linear-gradient( 175.9deg, hsla(209, 16%, 37%, 0.4) 15%, hsla(184, 27%, 39%, 0.4) 87.6%);  
+  background: linear-gradient( 175.9deg, hsla(209, 16%, 37%, 0.2) 15%, hsla(184, 27%, 39%, 0.2) 87.6%);  
   transition: opacity 0.3s ease-out;
   z-index: 2;
   opacity: 0;
@@ -840,7 +840,7 @@ address {
 .opening p {
     color: #ccc;
     float: left;
-    font-size: 16px;
+    font-size: 14px;
 }
 @media screen and (max-width:900px) {
     .opening p {

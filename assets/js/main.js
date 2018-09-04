@@ -54,3 +54,31 @@ function goToSec1() {
 }
 //--------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------
+var first_showed = 0;
+function showFirst() {
+    if(first_showed) {        
+        $('#first').css('visibility','hidden');
+        $('#first').css('height','0');
+        first_showed = 0;        
+    }
+    else {
+        $('#first').css('visibility','visible');
+        $('#first').css('height','100%');
+        first_showed = 1;        
+    }
+}
+var second_showed = 0;
+function showSecond() {
+    if(first_showed) {        
+        $('#second').css('visibility','hidden');
+        $('#second').css('height','0');
+        first_showed = 0;        
+    }
+    else {
+        $('#second').css('visibility','visible');
+        $('#second').css('height','100%');
+        first_showed = 1;        
+    }
+}
+//--------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------
