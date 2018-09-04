@@ -34,8 +34,10 @@
     }
 }
 @media screen and (max-width:800px) {
-    .hero h1 {  
-        width: 80%;
+    .hero h1 { 
+        font-size: 30px;
+        padding: 8px;
+        width: 90%;
     }
 }
 .contact .text {
