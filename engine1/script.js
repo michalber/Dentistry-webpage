@@ -18,4 +18,4 @@ function ws_parallax(k,g,a){var c=jQuery;var f=c(this);var d=a.find(".ws_list");
 // Obfuscated by Javascript Obfuscator
 // http://javascript-source.com
 //***********************************************
-jQuery("#wowslider-container1").wowSlider({effect:"parallax",prev:"",next:"",duration:7*100,delay:34*100,width:1000,height:600,autoPlay:true,autoPlayVideo:false,playPause:true,stopOnHover:true,loop:false,bullets:1,caption:true,captionEffect:"parallax",controls:true,controlsThumb:["data1/images/slidebg1.jpg", "data1/images/slidebg2.jpg", "data1/images/slidebg3.jpg", "data1/images/slidebg4.jpg"],responsive:1,fullScreen:true,gestures:2,onBeforeStep:0,images:0});
+jQuery("#wowslider-container1").wowSlider({effect:"parallax",prev:"",next:"",duration:10*100,delay:34*100,width:1000,height:600,autoPlay:true,autoPlayVideo:false,playPause:true,stopOnHover:false,loop:false,bullets:1,caption:true,captionEffect:"parallax",controls:true,controlsThumb:["data1/images/slidebg1.jpg", "data1/images/slidebg2.jpg", "data1/images/slidebg3.jpg", "data1/images/slidebg4.jpg"],responsive:1,fullScreen:false,gestures:2,onBeforeStep:0,images:0});
