@@ -16,7 +16,10 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     </head>
     <body>
-        <div class="nav-container">
+        <!--
+            data-aos="fade-up" data-aos-delay=500
+        -->
+        <div data-aos="fade-down" class="nav-container">
             <nav>
                 <input type="checkbox" id="nav" class="hidden">
                 <label for="nav" class="nav-btn">
@@ -40,14 +43,14 @@
         </div>
         
         <header class="parallax-window" data-parallax="scroll" data-image-src="assets/img/start_hero2.jpg">        
-                    <div class="hero-text-box">
-                     <h1 id="title">Witamy!</h1>   
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam odio dolor, facilisis nec quam vel, pellentesque porta dolor. In hac habitasse platea dictumst. Sed a sem velit. Nullam bibendum faucibus orci at egestas. Cras lobortis ligula vitae maximus commodo. Curabitur purus lorem, iaculis ac mauris in, tincidunt egestas odio. Suspendisse vitae turpis sed felis convallis sagittis a nec ipsum.</p>                   
-            <a class="btn btn-full" onclick="goToSec1()">Pokaż więcej</a>                        
-        </div>
+            <div class="hero-text-box">
+                <h1 data-aos="fade-right" id="title">Witamy!</h1>   
+                <p data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam odio dolor, facilisis nec quam vel, pellentesque porta dolor. In hac habitasse platea dictumst. Sed a sem velit. Nullam bibendum faucibus orci at egestas. Cras lobortis ligula vitae maximus commodo. Curabitur purus lorem, iaculis ac mauris in, tincidunt egestas odio. Suspendisse vitae turpis sed felis convallis sagittis a nec ipsum.</p>                   
+                <a data-aos="fade-right" class="btn btn-full" onclick="goToSec1()">Pokaż więcej</a>                        
+            </div>
         </header>
         
-        <div class="container o-nas">
+        <div data-aos="fade-down" data-aos-offset="300" class="container o-nas">
            <div class="row">
                <div class="header col-md-4">
                     <h1>Krótka historia o nas</h1>
@@ -67,21 +70,21 @@
                </div>
            </div>
             <div class="row">
-                <div class="col col-md-4 offer">
+                <div data-aos="flip-down" data-aos-offset="400" class="col col-md-4 offer">
                     <div class="inner">
                         <span class="root-icon first"></span>
                         <h3>Profilaktyka i leczenie zachowawcze</h3>
                         <p>Zajmujemy się leczeniem dorosłych, dzieci oraz profilaktyką próchnicy i chorób przyzębia</p>
                     </div>
                 </div>
-                <div class="col col-md-4 offer">
+                <div data-aos="flip-down" data-aos-offset="400" data-aos-delay="150" class="col col-md-4 offer">
                     <div class="inner">
                         <span class="root-icon second"></span>
                         <h3>Leczenie kanałowe</h3>
                         <p>W naszym gabinecie dentystycznym wykonujemy również zabiegi z zakresu endodoncji wykorzstując wysokiej klasy sprzęt do skutecznego leczenia skruszonych zębów</p>
                     </div>
                 </div>
-                <div class="col col-md-4 offer">
+                <div data-aos="flip-down" data-aos-offset="400" data-aos-delay="300" class="col col-md-4 offer">
                     <div class="inner">
                         <span class="root-icon third"></span>
                         <h3>Oczyszczanie zębów</h3>
@@ -89,50 +92,11 @@
                     </div>
                 </div>
             </div>
-            <div class="view-all">
+            <div data-aos="fade-down" data-aos-offset="200" class="view-all">
                 <a href="uslugi.html" class="btn-ghost">Zobacz więcej!</a>
             </div>
         </div>
-        
-        <!--
-        <div class="container gabinet"> 
-           <div class="row">
-               <h1 align="center">Nasz gabinet</h1>
-           </div>                      
-            <div class="row slider">
-                <slider>            
-                    <slide>  
-                        <div class="hover-instr"><img src="assets/img/mouse-pointer-white.png" class="hover-ico"/></div>                                             
-                        <div class="text">                           
-                            <h2>Nowoczesny gabinet</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut lacus vitae enim ultrices ultricies nec sit amet turpis.</p>
-                        </div>                        
-                    </slide>
-                    <slide>               
-                        <div class="hover-instr"><img src="assets/img/mouse-pointer-white.png" class="hover-ico"/></div>                                                                          
-                        <div class="text">                           
-                            <h2>Wysokiej klasy sprzęt</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut lacus vitae enim ultrices ultricies nec sit amet turpis.</p>
-                        </div>
-                    </slide>
-                    <slide>
-                        <div class="hover-instr"><img src="assets/img/mouse-pointer-white.png" class="hover-ico"/></div>                                                                                       
-                        <div class="text">                           
-                            <h2>Poczekalnia dla klientów</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut lacus vitae enim ultrices ultricies nec sit amet turpis.</p>
-                        </div>
-                    </slide>
-                    <slide>  
-                        <div class="hover-instr"><img src="assets/img/mouse-pointer-white.png" class="hover-ico"/></div>                                             
-                        <div class="text">                           
-                            <h2>Wykształceni lekarze</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut lacus vitae enim ultrices ultricies nec sit amet turpis.</p>
-                        </div>
-                    </slide>                                            
-                </slider>
-            </div>
-        </div>
--->
+
         <div class="container gabinet"> 
             <div class="row">
                 <h1 align="center">Nasz gabinet</h1>
@@ -156,47 +120,38 @@
             </div>	                
             <!-- End WOWSlider.com BODY section -->
         </div>   
-    
-
-        
         <div class="container sprzet">
             <div class="row">
-                <h1 align="center">Wyposażenie naszego gabinetu</h1>
+                <div class="col col-md-6 sprzet_offer">
+                    <img data-aos="fade-right" data-aos-offset="500" src="assets/img/sprzet1.JPG" alt="Sprzęt1" class="centered">
+                    <div data-aos="fade-down" data-aos-delay="200" class="offer-text centered">                
+                        <h3>Nowoczesny gabinet</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus totam ullam laborum est hic sint eius animi pariatur expedita, illo id cupiditate eaque, eum, repudiandae rerum. Est dicta harum consequatur?</p>
+                    </div>
+                </div>
+                <div class="col col-md-6 sprzet_offer">
+                    <img data-aos="fade-left" data-aos-offset="500" src="assets/img/sprzet2.JPG" alt="Sprzęt2" class="centered">
+                    <div data-aos="fade-down" data-aos-delay="200" class="offer-text centered">                
+                        <h3>Wyspecjalizowani lekarze</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus totam ullam laborum est hic sint eius animi pariatur expedita, illo id cupiditate eaque, eum, repudiandae rerum. Est dicta harum consequatur?</p>
+                    </div>
+                </div>                           
             </div>
-            <div class="row sprzet_offer">
-                <div class="col col-md-4">
-                    <img src="assets/img/sprzet1.JPG" alt="Sprzęt1" class="">
+           
+            <div class="row">
+                <div class="col col-md-6 sprzet_offer">
+                    <img data-aos="fade-right" data-aos-offset="300" src="assets/img/sprzet3.JPG" alt="Sprzęt3" class="centered">                                
+                    <div data-aos="fade-down" data-aos-delay="200" class="offer-text centered">                
+                        <h3>Obsługa na wysokim poziomie</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus totam ullam laborum est hic sint eius animi pariatur expedita, illo id cupiditate eaque, eum, repudiandae rerum. Est dicta harum consequatur?</p>
+                    </div>
                 </div>
-                <div class="col col-md-8">
-                    <h2>Nowoczesny gabinet</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus totam ullam laborum est hic sint eius animi pariatur expedita, illo id cupiditate eaque, eum, repudiandae rerum. Est dicta harum consequatur?</p>
-                </div>
-            </div>
-            <div class="row sprzet_offer">
-                <div class="col col-md-8">
-                    <h2>Wyspecjalizowani lekarze</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus totam ullam laborum est hic sint eius animi pariatur expedita, illo id cupiditate eaque, eum, repudiandae rerum. Est dicta harum consequatur?</p>
-                </div>
-                <div class="col col-md-4">
-                    <img src="assets/img/sprzet2.JPG" alt="Sprzęt2" class="">
-                </div>                                
-            </div>
-            <div class="row sprzet_offer">
-                <div class="col col-md-4">
-                    <img src="assets/img/sprzet3.JPG" alt="Sprzęt3" class="">
-                </div>
-                <div class="col col-md-8 text">
-                    <h2>Obsługa na wysokim poziomie</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus totam ullam laborum est hic sint eius animi pariatur expedita, illo id cupiditate eaque, eum, repudiandae rerum. Est dicta harum consequatur?</p>
-                </div>
-            </div>
-            <div class="row sprzet_offer">
-                <div class="col col-md-8">
-                    <h2>Wysokiej klasy sprzęt</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus totam ullam laborum est hic sint eius animi pariatur expedita, illo id cupiditate eaque, eum, repudiandae rerum. Est dicta harum consequatur?</p>
-                </div>
-                <div class="col col-md-4">
-                    <img src="assets/img/sprzet4.JPG" alt="Sprzęt4" class="">
+                <div class="col col-md-6 sprzet_offer">
+                    <img data-aos="fade-left" data-aos-offset="300" src="assets/img/sprzet4.JPG" alt="Sprzęt4" class="centered">
+                    <div data-aos="fade-down" data-aos-delay="200" class="offer-text centered">                
+                        <h3>Wysokiej klasy sprzęt</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus totam ullam laborum est hic sint eius animi pariatur expedita, illo id cupiditate eaque, eum, repudiandae rerum. Est dicta harum consequatur?</p>
+                    </div>
                 </div>                                
             </div>
         </div>
