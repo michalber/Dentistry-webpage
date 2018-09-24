@@ -87,7 +87,7 @@
 }
 @media screen and (max-width:765px) {
     .opis p {
-        font-size: 12px;
+        /*font-size: 12px;*/
     }
 }
 @media screen and (max-width:1200px) {
